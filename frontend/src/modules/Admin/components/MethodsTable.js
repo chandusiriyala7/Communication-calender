@@ -70,7 +70,7 @@ const MethodsTable = () => {
   // Handle delete action
   const handleDelete = async (methodId) => {
     try {
-      await axios.delete(`https://calendar-application-for-communication-a7y1.onrender.com/api/methods/${methodId}`);
+      await axios.delete(`https://communication-calender.onrender.com/api/methods/${methodId}`);
       setMethods((prevMethods) =>
         prevMethods.filter((method) => method._id !== methodId)
       );

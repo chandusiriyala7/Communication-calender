@@ -40,7 +40,7 @@ const CompaniesTable = () => {
   // Handle Delete Button Click
   const handleDeleteClick = async (companyId) => {
     try {
-      await axios.delete(`https://calendar-application-for-communication-a7y1.onrender.com/api/companies/${companyId}`);
+      await axios.delete(`https://communication-calender.onrender.com/api/companies/${companyId}`);
       setCompanies((prevCompanies) =>
         prevCompanies.filter((company) => company._id !== companyId)
       );
@@ -57,7 +57,7 @@ const CompaniesTable = () => {
   const handleCompanyUpdated = async (updatedCompany) => {
     try {
       await axios.put(
-        `https://calendar-application-for-communication-a7y1.onrender.com/api/companies/${updatedCompany._id}`,
+        `https://communication-calender.onrender.com/api/companies/${updatedCompany._id}`,
         updatedCompany
       );
       setCompanies((prevCompanies) =>
