@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-app.use(cors({ origin: "https://communication-calender-iota.vercel.app/" }));
+app.use(cors({ origin: "https://communication-calender-iota.vercel.app" }));
 
 
 
