@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection string (use environment variable for security)
-const dbURI = process.env.MONGODB_URI || "mongodb+srv://kkesava493:oCiKlIqzqRmEjTRK@calendarapplication.yjbd0.mongodb.net/?retryWrites=true&w=majority";
+const dbURI = process.env.MONGODB_URI || "mongodb+srv://chandusiriyala7:chandusiriyala7@cluster0.4slmg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
