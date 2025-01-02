@@ -10,7 +10,7 @@ const CalendarView = () => {
   useEffect(() => {
     const fetchCommunications = async () => {
       try {
-        const response = await axios.get("https://calendar-application-for-communication-a7y1.onrender.com/api/communications");
+        const response = await axios.get("https://communication-calender.onrender.com/api/communications");
         setCommunications(response.data.data);
       } catch (err) {
         console.error("Error fetching communications:", err.message);
