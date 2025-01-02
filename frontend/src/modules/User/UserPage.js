@@ -34,7 +34,7 @@ function UserPage() {
     setLoading(true);
     setError("");
     try {
-      const response = await axios.get("https://calendar-application-for-communication-a7y1.onrender.com/api/communications");
+      const response = await axios.get("https://communication-calender.onrender.com/api/communications");
       if (response.data.success && Array.isArray(response.data.data)) {
         const today = new Date();
         today.setHours(0, 0, 0, 0); // Normalize today's date

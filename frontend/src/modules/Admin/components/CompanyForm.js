@@ -43,7 +43,7 @@ const CompanyForm = ({
       if (initialData) {
         // Update existing company (Edit Mode)
         await axios.put(
-          `https://calendar-application-for-communication-a7y1.onrender.com/api/companies/${companyData._id}`,
+          `https://communication-calender.onrender.com/api/companies/${companyData._id}`,
           companyData
         );
         setMessage("Company updated successfully!");
@@ -51,7 +51,7 @@ const CompanyForm = ({
       } else {
         // Add new company (Add Mode)
         const response = await axios.post(
-          "https://calendar-application-for-communication-a7y1.onrender.com/api/companies",
+          "https://communication-calender.onrender.com/api/companies",
           companyData
         );
         setMessage(response.data.message || "Company added successfully!");

@@ -14,7 +14,7 @@ const CompaniesTable = () => {
   const fetchCompanies = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://calendar-application-for-communication-a7y1.onrender.com/api/companies");
+      const response = await axios.get("https://communication-calender.onrender.com/api/companies");
       if (Array.isArray(response.data.data)) {
         setCompanies(response.data.data);
       } else {

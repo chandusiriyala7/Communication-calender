@@ -30,7 +30,7 @@ export const CommunicationModal = ({ communication, onSubmit, onCancel }) => {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const response = await axios.get("https://calendar-application-for-communication-a7y1.onrender.com/api/companies");
+        const response = await axios.get("https://communication-calender.onrender.com/api/companies");
         if (response.data && response.data.data) {
           setCompanies(response.data.data);
         } else {

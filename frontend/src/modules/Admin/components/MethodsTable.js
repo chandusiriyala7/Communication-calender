@@ -19,7 +19,7 @@ const MethodsTable = () => {
   const fetchMethods = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://calendar-application-for-communication-a7y1.onrender.com/api/methods");
+      const response = await axios.get("https://communication-calender.onrender.com/api/methods");
       if (response.data.success && Array.isArray(response.data.data)) {
         setMethods(response.data.data);
       } else {
