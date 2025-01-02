@@ -67,8 +67,8 @@ export const CommunicationModal = ({ communication, onSubmit, onCancel }) => {
 
     try {
       const url = communication
-        ? `https://calendar-application-for-communication-a7y1.onrender.com/api/communications/${communication._id}`
-        : "https://calendar-application-for-communication-a7y1.onrender.com/api/communications";
+        ? `https://communication-calender.onrender.com/api/communications/${communication._id}`
+        : "https://communication-calender.onrender.com/api/communications";
 
       const response = communication
         ? await axios.put(url, communicationData)
