@@ -49,7 +49,19 @@ View and Manage Upcoming Communications: Displays scheduled dates and methods fo
 
 Notifications
 
+
+
 Overdue Communications Grid: Displays a list of companies with overdue actions that need attention.
 Today’s Communications Grid: Lists companies with tasks that are due today, helping users stay on top of important deadlines.
 
 ![Screenshot 2025-01-02 223117](https://github.com/user-attachments/assets/08b7e488-b42e-448a-987a-9da01077adee)
+
+
+
+
+Live Link of the Website is :- https://communication-calender-iota.vercel.app  
+
+
+
+This Deployment done with the help of vercel and render platforms where frontend is deployed in vercel and backend is deployed in render. 
+
